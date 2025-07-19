@@ -21,6 +21,10 @@ public class Quiz{
                 pergunta2();
                 tec.nextLine();
                 limpar();
+
+                pergunta3();
+                pausar();
+                limpar();
                 System.out.println("Jogo terminado, Obrigada por jogar");
                 fl=false;
             }
@@ -58,7 +62,24 @@ public class Quiz{
             System.out.println("Resposta correta!");
         } else {
             System.out.println("Errado. A resposta certa é: Pedro.");
-            System.out.println("Sou a Graciana");
+            
+        }
+    }
+
+    public static void pergunta3() {
+        System.out.println("Quem foi o discipulo que traiu Jesus?");
+        System.out.println("[1] João");
+        System.out.println("[2] Marcos");
+        System.out.println("[3] Judas");
+
+        int opcao = tec.nextInt();
+        tec.nextLine();
+
+        if (opcao == 3) {
+            System.out.println("Resposta correta!");
+        } else {
+            System.out.println("Errado. A resposta certa é: Pedro.");
+            
         }
     }
 
